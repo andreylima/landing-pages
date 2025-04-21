@@ -1,0 +1,711 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dra. Paola Moulin | Ortodontia de Excelência</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com/3.4.16"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: "#4fb8e8",
+              secondary: "#f8a5c2",
+            },
+            borderRadius: {
+              none: "0px",
+              sm: "4px",
+              DEFAULT: "8px",
+              md: "12px",
+              lg: "16px",
+              xl: "20px",
+              "2xl": "24px",
+              "3xl": "32px",
+              full: "9999px",
+              button: "8px",
+            },
+            fontFamily: {
+              montserrat: ["Montserrat", "sans-serif"],
+            },
+          },
+        },
+      };
+    </script>
+    <style>
+      :where([class^="ri-"])::before { content: "\f3c2"; }
+      body {
+          font-family: 'Montserrat', sans-serif;
+      }
+      .hero-section {
+          background-image: linear-gradient(to right, #00000000, rgba(255, 255, 255, 0.8), rgb(255 255 255 / 48%)), url('./img/dra-paola-barreto-ortodontista.jpg');
+          background-size: cover;
+          background-position: top center;
+      }
+      .cta-section {
+          background-image: linear-gradient(to right, rgba(79, 184, 232, 0.9), rgba(79, 184, 232, 0.8));
+          background-size: cover;
+          background-position: center;
+      }
+      input:focus, textarea:focus {
+          outline: none;
+          border-color: #4fb8e8;
+      }
+    </style>
+  </head>
+  <body class="bg-gray-50">
+    <!-- Header/Navbar -->
+    <header class="bg-white shadow-sm fixed w-full top-0 z-50">
+      <div
+        class="container mx-auto px-4 py-3 flex justify-between items-center"
+      >
+        <a href="#" class="font-['Pacifico'] text-primary text-2xl"
+          >Dra. Paola Moulin</a
+        >
+
+        <nav class="hidden md:flex space-x-8">
+          <a
+            href="#inicio"
+            class="text-gray-700 hover:text-primary font-medium transition"
+            >Início</a
+          >
+          <a
+            href="#especialidades"
+            class="text-gray-700 hover:text-primary font-medium transition"
+            >Especialidades</a
+          >
+          <a
+            href="#diferenciais"
+            class="text-gray-700 hover:text-primary font-medium transition"
+            >Diferenciais</a
+          >
+          <a
+            href="#sobre"
+            class="text-gray-700 hover:text-primary font-medium transition"
+            >Sobre</a
+          >
+          <a
+            href="#contato"
+            class="text-gray-700 hover:text-primary font-medium transition"
+            >Contato</a
+          >
+        </nav>
+
+        <a
+          href="https://wa.me/552734419502?text=Olá,%20gostaria%20de%20agendar%20uma%20consulta"
+          class="hidden md:flex items-center gap-2 bg-green-500 hover:bg-green-600 text-white py-2 px-4 !rounded-button whitespace-nowrap transition"
+        >
+          <div class="w-5 h-5 flex items-center justify-center">
+            <i class="ri-whatsapp-line"></i>
+          </div>
+          <span>Agendar Consulta</span>
+        </a>
+
+        <button
+          class="md:hidden w-10 h-10 flex items-center justify-center text-gray-700"
+        >
+          <i class="ri-menu-line text-2xl"></i>
+        </button>
+      </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="inicio" class="hero-section pt-24 md:pt-32 pb-16 md:pb-24">
+      <div class="container mx-auto px-4">
+        <div class="w-full md:w-1/2 py-8 md:py-16">
+          <h1
+            class="text-4xl md:text-5xl font-bold text-gray-800 leading-tight mb-4"
+          >
+            Ortodontia de Excelência para Todas as Fases da Vida
+          </h1>
+          <p class="text-xl md:text-2xl text-gray-600 mb-8">
+            Há 10 anos fortalecendo sorrisos e autoestima
+          </p>
+          <a
+            href="https://wa.me/552734419502?text=Olá,%20gostaria%20de%20agendar%20uma%20consulta"
+            class="inline-flex items-center gap-2 bg-green-500 hover:bg-green-600 text-white py-3 px-8 !rounded-button text-lg font-medium whitespace-nowrap transition shadow-md"
+          >
+            <div class="w-6 h-6 flex items-center justify-center">
+              <i class="ri-whatsapp-line"></i>
+            </div>
+            <span>Agende sua Consulta</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Especialidades -->
+    <section id="especialidades" class="py-16 bg-white">
+      <div class="container mx-auto px-4">
+        <div class="text-center mb-16">
+          <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">
+            Nossas Especialidades
+          </h2>
+          <p class="text-lg text-gray-600 max-w-3xl mx-auto">
+            Oferecemos tratamentos personalizados para cada fase da vida, com
+            tecnologia de ponta e atendimento humanizado.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <!-- Card 1 -->
+          <div
+            class="bg-white rounded-lg shadow-md p-8 hover:shadow-lg transition"
+          >
+            <div
+              class="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mb-6 mx-auto"
+            >
+              <div
+                class="w-8 h-8 flex items-center justify-center text-primary"
+              >
+                <i class="ri-tooth-line text-2xl"></i>
+              </div>
+            </div>
+            <h3 class="text-xl font-semibold text-gray-800 mb-3 text-center">
+              Ortodontia
+            </h3>
+            <p class="text-gray-600 text-center">
+              Correção do posicionamento dos dentes e maxilares para um sorriso
+              harmonioso e funcional, com aparelhos fixos e removíveis.
+            </p>
+          </div>
+
+          <!-- Card 2 -->
+          <div
+            class="bg-white rounded-lg shadow-md p-8 hover:shadow-lg transition"
+          >
+            <div
+              class="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mb-6 mx-auto"
+            >
+              <div
+                class="w-8 h-8 flex items-center justify-center text-primary"
+              >
+                <i class="ri-user-smile-line text-2xl"></i>
+              </div>
+            </div>
+            <h3 class="text-xl font-semibold text-gray-800 mb-3 text-center">
+              Ortopedia Facial
+            </h3>
+            <p class="text-gray-600 text-center">
+              Tratamento para corrigir o crescimento e desenvolvimento dos ossos
+              faciais, especialmente em crianças e adolescentes.
+            </p>
+          </div>
+
+          <!-- Card 3 -->
+          <div
+            class="bg-white rounded-lg shadow-md p-8 hover:shadow-lg transition"
+          >
+            <div
+              class="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mb-6 mx-auto"
+            >
+              <div
+                class="w-8 h-8 flex items-center justify-center text-primary"
+              >
+                <i class="ri-emotion-happy-line text-2xl"></i>
+              </div>
+            </div>
+            <h3 class="text-xl font-semibold text-gray-800 mb-3 text-center">
+              Harmonização Facial
+            </h3>
+            <p class="text-gray-600 text-center">
+              Procedimentos estéticos minimamente invasivos para realçar a
+              beleza natural do rosto e equilibrar suas proporções.
+            </p>
+          </div>
+
+          <!-- Card 4 -->
+          <div
+            class="bg-white rounded-lg shadow-md p-8 hover:shadow-lg transition"
+          >
+            <div
+              class="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mb-6 mx-auto"
+            >
+              <div
+                class="w-8 h-8 flex items-center justify-center text-primary"
+              >
+                <i class="ri-sun-line text-2xl"></i>
+              </div>
+            </div>
+            <h3 class="text-xl font-semibold text-gray-800 mb-3 text-center">
+              Clareamento Dental
+            </h3>
+            <p class="text-gray-600 text-center">
+              Técnicas avançadas de clareamento para um sorriso mais branco e
+              radiante, com segurança e eficácia.
+            </p>
+          </div>
+
+          <!-- Card 5 -->
+          <div
+            class="bg-white rounded-lg shadow-md p-8 hover:shadow-lg transition"
+          >
+            <div
+              class="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mb-6 mx-auto"
+            >
+              <div
+                class="w-8 h-8 flex items-center justify-center text-primary"
+              >
+                <i class="ri-flashlight-line text-2xl"></i>
+              </div>
+            </div>
+            <h3 class="text-xl font-semibold text-gray-800 mb-3 text-center">
+              Laserterapia
+            </h3>
+            <p class="text-gray-600 text-center">
+              Tratamento com laser para diversas condições bucais,
+              proporcionando alívio da dor, cicatrização mais rápida e conforto.
+            </p>
+          </div>
+
+          <!-- Card 6 -->
+          <div
+            class="bg-white rounded-lg shadow-md p-8 hover:shadow-lg transition"
+          >
+            <div
+              class="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mb-6 mx-auto"
+            >
+              <div
+                class="w-8 h-8 flex items-center justify-center text-primary"
+              >
+                <i class="ri-health-book-line text-2xl"></i>
+              </div>
+            </div>
+            <h3 class="text-xl font-semibold text-gray-800 mb-3 text-center">
+              Tratamentos Interceptativos
+            </h3>
+            <p class="text-gray-600 text-center">
+              Intervenções precoces para prevenir ou minimizar problemas
+              ortodônticos futuros, especialmente em crianças.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Diferenciais -->
+    <section id="diferenciais" class="py-16 bg-gray-50">
+      <div class="container mx-auto px-4">
+        <div class="flex flex-col md:flex-row items-center gap-12">
+          <div class="w-full md:w-1/2">
+            <img
+              src="./img/dra-paola-invisalign.jpeg"
+              alt="Tratamento Invisalign"
+              class="rounded-lg shadow-lg w-full h-auto object-cover"
+            />
+          </div>
+
+          <div class="w-full md:w-1/2">
+            <div class="flex items-center gap-4 mb-6">
+              <div
+                class="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center"
+              >
+                <div
+                  class="w-6 h-6 flex items-center justify-center text-primary"
+                >
+                  <i class="ri-award-line text-xl"></i>
+                </div>
+              </div>
+              <h2 class="text-3xl font-bold text-gray-800">
+                Nossos Diferenciais
+              </h2>
+            </div>
+
+            <div class="bg-white p-6 rounded-lg shadow-md mb-6">
+              <div class="flex items-center gap-4 mb-4">
+                <div
+                  class="w-10 h-10 bg-primary/10 rounded-full flex items-center justify-center"
+                >
+                  <div
+                    class="w-5 h-5 flex items-center justify-center text-primary"
+                  >
+                    <i class="ri-check-line"></i>
+                  </div>
+                </div>
+                <h3 class="text-xl font-semibold text-gray-800">
+                  Invisalign Top Doctor
+                </h3>
+              </div>
+              <p class="text-gray-600 ml-14">
+                Certificação que reconhece os profissionais mais experientes e
+                qualificados no tratamento com alinhadores transparentes
+                Invisalign.
+              </p>
+            </div>
+
+            <div class="space-y-4">
+              <div class="flex items-center gap-4">
+                <div
+                  class="w-8 h-8 bg-primary/10 rounded-full flex items-center justify-center shrink-0"
+                >
+                  <div
+                    class="w-4 h-4 flex items-center justify-center text-primary"
+                  >
+                    <i class="ri-check-line"></i>
+                  </div>
+                </div>
+                <p class="text-gray-700">
+                  Aparelhos ortodônticos fixos estéticos e metálicos
+                </p>
+              </div>
+
+              <div class="flex items-center gap-4">
+                <div
+                  class="w-8 h-8 bg-primary/10 rounded-full flex items-center justify-center shrink-0"
+                >
+                  <div
+                    class="w-4 h-4 flex items-center justify-center text-primary"
+                  >
+                    <i class="ri-check-line"></i>
+                  </div>
+                </div>
+                <p class="text-gray-700">
+                  Tratamentos interceptativos para crianças
+                </p>
+              </div>
+
+              <div class="flex items-center gap-4">
+                <div
+                  class="w-8 h-8 bg-primary/10 rounded-full flex items-center justify-center shrink-0"
+                >
+                  <div
+                    class="w-4 h-4 flex items-center justify-center text-primary"
+                  >
+                    <i class="ri-check-line"></i>
+                  </div>
+                </div>
+                <p class="text-gray-700">
+                  Alinhadores transparentes Invisalign
+                </p>
+              </div>
+
+              <div class="flex items-center gap-4">
+                <div
+                  class="w-8 h-8 bg-primary/10 rounded-full flex items-center justify-center shrink-0"
+                >
+                  <div
+                    class="w-4 h-4 flex items-center justify-center text-primary"
+                  >
+                    <i class="ri-check-line"></i>
+                  </div>
+                </div>
+                <p class="text-gray-700">
+                  Tecnologia de ponta para diagnóstico e tratamento
+                </p>
+              </div>
+
+              <div class="flex items-center gap-4">
+                <div
+                  class="w-8 h-8 bg-primary/10 rounded-full flex items-center justify-center shrink-0"
+                >
+                  <div
+                    class="w-4 h-4 flex items-center justify-center text-primary"
+                  >
+                    <i class="ri-check-line"></i>
+                  </div>
+                </div>
+                <p class="text-gray-700">
+                  Atendimento humanizado e personalizado
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sobre a Profissional -->
+    <section id="sobre" class="py-16 bg-white">
+      <div class="container mx-auto px-4">
+        <div class="flex flex-col md:flex-row items-center gap-12">
+          <div class="w-full md:w-2/5">
+            <img
+              src="./img/dra-paola-paciente.jpeg"
+              alt="Dra. Paola Moulin"
+              class="rounded-lg shadow-lg w-full h-auto object-cover"
+            />
+          </div>
+
+          <div class="w-full md:w-3/5">
+            <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-6">
+              Sobre a Dra. Paola Moulin
+            </h2>
+
+            <div class="flex items-center gap-3 mb-6">
+              <div
+                class="w-10 h-10 bg-primary/10 rounded-full flex items-center justify-center"
+              >
+                <div
+                  class="w-5 h-5 flex items-center justify-center text-primary"
+                >
+                  <i class="ri-time-line"></i>
+                </div>
+              </div>
+              <p class="text-lg font-medium text-gray-700">
+                10 anos de experiência
+              </p>
+            </div>
+
+            <p class="text-gray-600 mb-6">
+              A Dra. Paola Moulin é especialista em Ortodontia e Ortopedia
+              Facial, dedicando-se a proporcionar tratamentos de excelência que
+              transformam sorrisos e fortalecem a autoestima de seus pacientes
+              em todas as fases da vida.
+            </p>
+
+            <p class="text-gray-600 mb-6">
+              Com formação pela Universidade Federal do Espírito Santo e
+              diversos cursos de aperfeiçoamento no Brasil e exterior, a Dra.
+              Paola é reconhecida como Invisalign Top Doctor, certificação que
+              atesta sua expertise no tratamento com alinhadores transparentes.
+            </p>
+
+            <p class="text-gray-600 mb-8">
+              No consultório Moulin Odontologia Especializada, localizado no
+              bairro Santa Lúcia em Vitória - ES, ela combina tecnologia de
+              ponta, conhecimento científico atualizado e um olhar humanizado
+              para oferecer os melhores resultados estéticos e funcionais.
+            </p>
+
+            <div class="flex items-center gap-4">
+              <div
+                class="w-10 h-10 bg-primary/10 rounded-full flex items-center justify-center"
+              >
+                <div
+                  class="w-5 h-5 flex items-center justify-center text-primary"
+                >
+                  <i class="ri-map-pin-line"></i>
+                </div>
+              </div>
+              <p class="text-gray-700">Santa Lúcia, Vitória – ES</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section id="contato" class="cta-section py-16 text-white">
+      <div class="container mx-auto px-4 text-center">
+        <h2 class="text-3xl md:text-4xl font-bold mb-6">
+          Dê o primeiro passo para sorrir com confiança!
+        </h2>
+        <p class="text-xl mb-8 max-w-3xl mx-auto">
+          Agende sua consulta agora e descubra como podemos transformar o seu
+          sorriso e fortalecer sua autoestima.
+        </p>
+
+        <a
+          href="https://wa.me/552734419502?text=Olá,%20gostaria%20de%20agendar%20uma%20consulta"
+          class="inline-flex items-center gap-3 bg-green-500 hover:bg-green-600 text-white py-4 px-10 !rounded-button text-xl font-medium whitespace-nowrap transition shadow-lg mb-12"
+        >
+          <div class="w-7 h-7 flex items-center justify-center">
+            <i class="ri-whatsapp-line text-2xl"></i>
+          </div>
+          <span>Agende sua Consulta</span>
+        </a>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl mx-auto">
+          <div class="bg-white/20 backdrop-blur-sm p-6 rounded-lg">
+            <div
+              class="w-12 h-12 bg-white/30 rounded-full flex items-center justify-center mb-4 mx-auto"
+            >
+              <div class="w-6 h-6 flex items-center justify-center text-white">
+                <i class="ri-map-pin-line text-xl"></i>
+              </div>
+            </div>
+            <h3 class="text-lg font-semibold mb-2">Endereço</h3>
+            <p>
+              R. das Palmeiras, 721 - sala 705<br />Santa Lúcia, Vitória - ES<br />CEP:
+              29056-210
+            </p>
+          </div>
+
+          <div class="bg-white/20 backdrop-blur-sm p-6 rounded-lg">
+            <div
+              class="w-12 h-12 bg-white/30 rounded-full flex items-center justify-center mb-4 mx-auto"
+            >
+              <div class="w-6 h-6 flex items-center justify-center text-white">
+                <i class="ri-time-line text-xl"></i>
+              </div>
+            </div>
+            <h3 class="text-lg font-semibold mb-2">Horário</h3>
+            <p>Segunda a Sexta<br />8h às 18h<br />Sábado: 8h às 12h</p>
+          </div>
+
+          <div class="bg-white/20 backdrop-blur-sm p-6 rounded-lg">
+            <div
+              class="w-12 h-12 bg-white/30 rounded-full flex items-center justify-center mb-4 mx-auto"
+            >
+              <div class="w-6 h-6 flex items-center justify-center text-white">
+                <i class="ri-phone-line text-xl"></i>
+              </div>
+            </div>
+            <h3 class="text-lg font-semibold mb-2">Contato</h3>
+            <p>
+              WhatsApp: (27) 3441-9502
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-300 py-12">
+      <div class="container mx-auto px-4">
+        <div class="flex flex-col md:flex-row justify-between mb-8">
+          <div class="mb-8 md:mb-0">
+            <a
+              href="#"
+              class="font-['Pacifico'] text-white text-2xl mb-4 inline-block"
+              >Moulin Odontologia</a
+            >
+            <p class="max-w-xs mb-6">
+              Há 10 anos ajudando a fortalecer a autoestima em todas as fases da
+              vida através de sorrisos saudáveis e bonitos.
+            </p>
+            <div class="flex space-x-4">
+              <a
+                href="https://www.instagram.com/drapaolabarreto/"
+                class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-primary transition"
+              >
+                <div
+                  class="w-5 h-5 flex items-center justify-center text-white"
+                >
+                  <i class="ri-instagram-line"></i>
+                </div>
+              </a>
+
+            </div>
+          </div>
+
+          <div class="mb-8 md:mb-0">
+            <h3 class="text-white text-lg font-semibold mb-4">Navegação</h3>
+            <ul class="space-y-2">
+              <li>
+                <a href="#inicio" class="hover:text-primary transition"
+                  >Início</a
+                >
+              </li>
+              <li>
+                <a href="#especialidades" class="hover:text-primary transition"
+                  >Especialidades</a
+                >
+              </li>
+              <li>
+                <a href="#diferenciais" class="hover:text-primary transition"
+                  >Diferenciais</a
+                >
+              </li>
+              <li>
+                <a href="#sobre" class="hover:text-primary transition">Sobre</a>
+              </li>
+              <li>
+                <a href="#contato" class="hover:text-primary transition"
+                  >Contato</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div class="mb-8 md:mb-0">
+            <h3 class="text-white text-lg font-semibold mb-4">
+              Especialidades
+            </h3>
+            <ul class="space-y-2">
+              <li>
+                <a href="#" class="hover:text-primary transition">Ortodontia</a>
+              </li>
+              <li>
+                <a href="#" class="hover:text-primary transition"
+                  >Ortopedia Facial</a
+                >
+              </li>
+              <li>
+                <a href="#" class="hover:text-primary transition"
+                  >Harmonização Facial</a
+                >
+              </li>
+              <li>
+                <a href="#" class="hover:text-primary transition"
+                  >Clareamento Dental</a
+                >
+              </li>
+              <li>
+                <a href="#" class="hover:text-primary transition"
+                  >Laserterapia</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <h3 class="text-white text-lg font-semibold mb-4">Contato</h3>
+            <ul class="space-y-3">
+              <li class="flex items-start gap-3">
+                <div
+                  class="w-5 h-5 flex items-center justify-center text-primary mt-1"
+                >
+                  <i class="ri-map-pin-line"></i>
+                </div>
+                <span
+                  >Av. Nossa Senhora da Penha, 1495<br />Santa Lúcia, Vitória -
+                  ES</span
+                >
+              </li>
+              <li class="flex items-center gap-3">
+                <div
+                  class="w-5 h-5 flex items-center justify-center text-primary"
+                >
+                  <i class="ri-whatsapp-line"></i>
+                </div>
+                <span>(27) 3441-9502</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="border-t border-gray-800 pt-8 text-center">
+          <p>
+            &copy; 2025 Moulin Odontologia Especializada. Todos os direitos
+            reservados.
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+          anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            const targetId = this.getAttribute("href");
+            const targetElement = document.querySelector(targetId);
+
+            if (targetElement) {
+              window.scrollTo({
+                top: targetElement.offsetTop - 80,
+                behavior: "smooth",
+              });
+            }
+          });
+        });
+      });
+    </script>
+  </body>
+</html>
